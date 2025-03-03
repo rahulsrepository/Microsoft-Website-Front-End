@@ -1,0 +1,438 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font styling */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+.Microsoft-logo img {
+  width: 108px;
+  height: 23px;
+  cursor: pointer;
+}
+.nav-center ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 400;
+}
+a:hover {
+  text-decoration: underline;
+}
+.nav-right {
+  display: flex;
+  gap: 2rem;
+}
+.nav-right button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* ADS BANNER */
+.ads {
+  width: 100%;
+  height: 58px;
+  background-color: rgb(81, 81, 170);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ads a {
+  color: white;
+}
+
+/* HERO SECTION */
+.hero-img {
+  position: relative;
+}
+.hero-img img {
+  width: 100%;
+  display: block;
+}
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.hero-overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero-overlay p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 4rem;
+}
+.hero-overlay button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background-color: #0078d4;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hero-overlay button:hover {
+  background-color: #005a9e;
+}
+
+/* SHOP SECTION (Icon + Link) */
+.shop {
+  padding: 3rem 5%;
+}
+.shop-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+}
+.shop-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+.shop-item a {
+  color: #0078d4;
+  text-decoration: none;
+  font-weight: 400;
+}
+.shop-item a:hover {
+  text-decoration: underline;
+}
+
+/* SHOP CARDS */
+.shop-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0rem 4rem;
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+/* Buttons in cards */
+.card-btn1,
+.card-btn2 {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0078d4;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+.card-btn1 {
+  width: 100px;
+  height: 32px;
+}
+.card-btn2 {
+  width: 220px;
+  height: 36px;
+}
+.card-btn1:hover,
+.card-btn2:hover {
+  background-color: #005a9e;
+}
+
+/* BANNER WITH OVERLAY */
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+.banner img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+.banner-body {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.banner-body h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+.banner-body p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+.banner-body button {
+  padding: 0.75rem 1.5rem;
+  background-color: #0067B8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.banner-body button:hover {
+  background-color: #00509e;
+}
+.banner-body a {
+  display: block;
+  margin-top: 1rem;
+  color: #0067B8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.banner-body a:hover {
+  text-decoration: underline;
+}
+
+/* EXPLORE SECTION */
+.explore h1 {
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.explore-cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.explore-cards .card {
+  width: 300px;
+  min-height: 205px;
+}
+.explore-cards button {
+  background-color: #0067B8;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+.explore-cards button:hover {
+  background-color: #00509e;
+}
+
+/* CELEBRATE SECTION (Black History Month) */
+.celebrate-section {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 3rem 5%;
+}
+.celebrate-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.celebrate-left {
+  flex: 1;
+  padding: 2rem;
+}
+.celebrate-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+.celebrate-left p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+.celebrate-left button {
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.celebrate-left button:hover {
+  background-color: #005a9e;
+}
+.celebrate-right {
+  flex: 1;
+}
+.celebrate-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #f2f2f2;
+  padding: 2rem 4rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+/* Top row: Follow Microsoft + social icons, Back to top button */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.follow-microsoft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.follow-microsoft p {
+  font-weight: 600;
+  margin-right: 1rem;
+}
+.follow-microsoft img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+/* Back to top button */
+.back-to-top {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+.back-to-top:hover {
+  background-color: #eee;
+}
+/* Middle row: link columns */
+.footer-links-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 140px;
+}
+.footer-col h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col li {
+  margin-bottom: 0.5rem;
+}
+.footer-col a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.footer-col a:hover {
+  text-decoration: underline;
+}
+/* Bottom row: language, disclaimers, etc. */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+.footer-bottom-left,
+.footer-bottom-right {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer-bottom-left a,
+.footer-bottom-right a,
+.footer-bottom-right span {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.footer-bottom-left a:hover,
+.footer-bottom-right a:hover {
+  text-decoration: underline;
+}

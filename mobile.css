@@ -1,0 +1,247 @@
+/* MOBILE.CSS - Mobile First Overrides (max-width: 768px) */
+
+/* HEADER ADJUSTMENTS */
+header {
+    padding: 1rem 2rem;
+    /* Hide the nav-center text links */
+  }
+  .Microsoft-logo img {
+    width: 80px; /* Smaller logo */
+  }
+  .nav-center {
+    display: none;
+  }
+  .nav-right {
+    gap: 1rem;
+  }
+  
+  /* ADS BANNER */
+  .ads {
+    height: auto;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  
+  /* HERO SECTION */
+  .hero-img img {
+    width: 100%;
+  }
+  .hero-overlay {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* SHOP SECTION: Stack items vertically */
+  .shop-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .shop-item {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  /* SHOP CARDS: Stack cards vertically */
+  .shop-cards {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* BANNER WITH OVERLAY */
+  .banner img {
+    width: 100%;
+  }
+  .banner-body {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* EXPLORE SECTION */
+  .explore-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* CELEBRATE SECTION */
+  .celebrate-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* FOOTER ADJUSTMENTS */
+  .footer {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  .footer-links-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .hero-overlay button {
+        display: none;
+      }
+      .banner {
+        display: none !important;
+      }
+      .explore-cards {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;    /* Center horizontally */
+        gap: 1rem;             /* Space between cards */
+      }
+    
+      .explore-cards .card {
+        width: 100%;
+        max-width: 300px; /* Or any width you prefer for each card */
+        margin: 0 auto;   /* Ensure each card is centered */
+      }
+    }
+    /* HEADER: Hide nav-center, keep only icons in nav-right */
+    header {
+      padding: 1rem 2rem;
+    }
+    .Microsoft-logo img {
+      width: 80px;
+    }
+    .nav-center {
+      display: none;
+    }
+    .nav-right {
+        display: flex;
+        align-items: center; /* Ensures icons are centered vertically */
+        gap: 1rem;          /* Space between button and icons */
+      }
+      .nav-right i {
+        font-size: 1.5rem;  /* Adjust icon size as needed */
+        line-height: 1;     /* Helps keep them snugly aligned */
+      }
+    /* Hide text for Search, Cart, Sign in, leaving only icons */
+    .nav-right a {
+      font-size: 0;
+      line-height: 0;
+    }
+    .nav-right a i {
+      font-size: 1.5rem;
+      color: black;
+    }
+  
+    /* ADS BANNER */
+    .ads {
+      height: auto;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  
+    /* HERO SECTION */
+    .hero-img img {
+      width: 100%;
+    }
+    .hero-overlay {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    /* Hide the hero overlay heading and paragraph */
+    .hero-overlay h1,
+    .hero-overlay p {
+      display: none;
+    }
+    /* If your button is still inside .hero-overlay, you can add margin to push it down */
+    .hero-overlay button {
+      margin-top: 2rem; /* Adjust as needed */
+    }
+  
+    /* If your "Shop now" button is in a separate container (hero-button-container),
+       you can style that container instead:
+    
+    .hero-button-container {
+      text-align: center;
+      margin-top: 2rem; 
+    }
+    */
+  
+    /* SHOP SECTION: Stack items vertically */
+    .shop-container {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    .shop-item {
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    /* SHOP CARDS: Stack cards vertically */
+    .shop-cards {
+        flex-direction: column; 
+        gap: 1rem;
+        padding: 0 1rem;
+        align-items: center; /* This centers the cards horizontally */
+      }
+      .shop-cards .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto; /* Optional if you want each card to be sure it's centered */
+      }
+  
+    /* BANNER WITH OVERLAY */
+    .banner img {
+      width: 100%;
+    }
+    .banner-body {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    /* EXPLORE SECTION */
+    .explore-cards {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    /* CELEBRATE SECTION */
+    .celebrate-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    /* FOOTER ADJUSTMENTS */
+    .footer {
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    .footer-links-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+  
